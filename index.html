@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataForge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        <h1>DataForge</h1>
+        <p id="slogan"></p>
+        <button id="mode">Mode sombre</button>
+    </header>
+
+    <!-- Section À propos -->
+    <section id="about">
+        <h2>À propos</h2>
+        <p>Nous transformons les données en solutions innovantes pour propulser votre entreprise.</p>
+    </section>
+
+    <!-- Section Services -->
+    <section id="services">
+        <h2>Nos services</h2>
+        <div class="service-cards">
+            <div class="card" onclick="toggleCard(this)">
+                <h3>Analyse de données</h3>
+                <p class="details">Nous analysons vos données pour en extraire des insights précieux.</p>
+            </div>
+            <div class="card" onclick="toggleCard(this)">
+                <h3>Développement d'API</h3>
+                <p class="details">Nous créons des APIs robustes pour connecter vos systèmes.</p>
+            </div>
+            <div class="card" onclick="toggleCard(this)">
+                <h3>Intelligence Artificielle</h3>
+                <p class="details">Nous intégrons l'IA pour automatiser vos processus.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projects">
+        <h2>Nos projets</h2>
+        <div class="carousel">
+            <div class="slide active">
+                <img src="https://via.placeholder.com/400x200" alt="Projet 1">
+                <p>Projet 1 : Analyse de données pour une entreprise de logistique.</p>
+            </div>
+            <div class="slide">
+                <img src="https://via.placeholder.com/400x200" alt="Projet 2">
+                <p>Projet 2 : Développement d'une API pour une application mobile.</p>
+            </div>
+            <div class="slide">
+                <img src="https://via.placeholder.com/400x200" alt="Projet 3">
+                <p>Projet 3 : Intégration d'un modèle d'IA pour la prédiction de ventes.</p>
+            </div>
+        </div>
+        <button id="prev">Précédent</button>
+        <button id="next">Suivant</button>
+    </section>
+
+    <!-- Section Statistiques -->
+    <section id="stats">
+        <h2>Nos réalisations</h2>
+        <div class="counters">
+            <div class="counter" data-target="50">0</div>
+            <div class="counter" data-target="120">0</div>
+            <div class="counter" data-target="300">0</div>
+        </div>
+        <p>Projets réalisés | Clients satisfaits | Heures de travail</p>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Votre nom" required>
+            <input type="email" id="email" placeholder="Votre email" required>
+            <textarea id="message" placeholder="Votre message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+        <div id="form-message"></div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>© 2023 DataForge. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
